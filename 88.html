@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>翻页故事88</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      width: 25vw;
+      height: auto;
+      max-width: 100%;
+
+    }
+  </style>
+  <style>
+    #homeButton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .mydiv {
+
+      background-color: gray;
+      position: absolute;
+      top: 200px;
+      right: 10px;
+    }
+
+    .mydiv button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .nextButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      right: 10px;
+    }
+  </style>
+  <style>
+    .prevButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      left: 10px;
+    }
+  </style>
+
+  <script>
+    function toDou(n) {
+      if (n < 4) {
+        return '0' + n;
+      } else {
+        return '' + n;
+      }
+    }
+    // Initialize counter
+    var count = 0;
+
+    window.onload = function () {
+      var imgSet = document.getElementsByTagName('img');
+
+      function Ticker() {
+        // Get the current image to change
+        var img = imgSet[count % imgSet.length];
+
+        // Update the source of the current image
+        img.src = 'img88/' + count + '.jpg';
+
+        // Increment the counter
+        count++;
+
+        // Reset the counter if it reaches the total number of images
+        if (count >= imgSet.length) {
+          count = 0;
+        }
+      }
+
+      setInterval(Ticker, 4000);
+    };
+
+
+  </script>
+
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+  <a href="index.html">
+    <button id="homeButton"><span style="color:rgb(68, 44, 16)">home</span></button>
+  </a>
+
+  <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      Lesson 88 Trapped in a mine 
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div
+      style="width: 50%; text-align: left; font-size: 18px; font-family: sans-serif; color: rgb(0, 0, 0); line-height: 1.6;">
+      Six men have been trapped in a mine for seventeen hours. If they are not brought to the surface soon they may lose their lives. However, rescue operations are proving difficult. If explosives are used, vibrations will cause the roof of the mine to collapse. Rescue workers are therefore drilling a hole on the north side of the mine. They intend to bring the men up in a special capsule. If there had not been a hard layer of rock beneath the soil, they would have completed the job in a few hours. As it is, they have been drilling for sixteen hours and they still have a long way to go. Meanwhile, a microphone, which was lowered into the mine two hours ago, has enabled the men to keep in touch with their closest relatives. Though they are running out of food and drink, the men are cheerful and confident that they will get out soon. They have been told that rescue operations are progressing smoothly. If they knew how difficult it was to drill through the hard rock, they would lose heart.
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 3em;"></p>
+    </div>
+
+    <div style="width: 95%; display: flex; justify-content: space-around;">
+      <img src="img88/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img88/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img88/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img88/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      play
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 95%; display: flex; justify-content: space-around;text-align: center;">
+      <!-- 第一个音频文件的播放按钮 -->
+      <audio id="audio1" src="mp3/2_88.wav"></audio>
+      <button onclick="document.getElementById('audio1').play()">Enghlish_us</button>
+
+      <!-- 第二个音频文件的播放按钮 -->
+      <audio id="audio2" src="mp3/2_88_ii.wav"></audio>
+      <button onclick="document.getElementById('audio2').play()">Enghlish_in</button>
+
+      <!-- 第三个音频文件的播放按钮 -->
+      <audio id="audio3" src="mp3/2_88_cc.wav"></audio>
+      <button onclick="document.getElementById('audio3').play()">中文</button>
+    </div>
+    <div class="mydiv">
+      <a href="https://aj300542.github.io/"><button>about me</button></a>
+    </div>
+    <div class="nextButton">
+      <a href="89.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);">></span>
+        </button></a>
+    </div>
+    <div class="prevButton">
+      <a href="87.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);"><</span>
+        </button></a>
+    </div>
+  </body>
+
+
+</body>
+
+</html>
