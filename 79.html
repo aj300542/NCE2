@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>翻页故事79</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      width: 25vw;
+      height: auto;
+      max-width: 100%;
+
+    }
+  </style>
+  <style>
+    #homeButton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .mydiv {
+
+      background-color: gray;
+      position: absolute;
+      top: 200px;
+      right: 10px;
+    }
+
+    .mydiv button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .nextButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      right: 10px;
+    }
+  </style>
+  <style>
+    .prevButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      left: 10px;
+    }
+  </style>
+
+  <script>
+    function toDou(n) {
+      if (n < 4) {
+        return '0' + n;
+      } else {
+        return '' + n;
+      }
+    }
+    // Initialize counter
+    var count = 0;
+
+    window.onload = function () {
+      var imgSet = document.getElementsByTagName('img');
+
+      function Ticker() {
+        // Get the current image to change
+        var img = imgSet[count % imgSet.length];
+
+        // Update the source of the current image
+        img.src = 'img79/' + count + '.jpg';
+
+        // Increment the counter
+        count++;
+
+        // Reset the counter if it reaches the total number of images
+        if (count >= imgSet.length) {
+          count = 0;
+        }
+      }
+
+      setInterval(Ticker, 4000);
+    };
+
+
+  </script>
+
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+  <a href="index.html">
+    <button id="homeButton"><span style="color:rgb(68, 44, 16)">home</span></button>
+  </a>
+
+  <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      Lesson 79 By air  
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div
+      style="width: 50%; text-align: left; font-size: 18px; font-family: sans-serif; color: rgb(0, 0, 0); line-height: 1.6;">
+      I used to travel by air a great deal when I was a boy. My parents used to live in South America and I used to fly there from Europe in the holidays. A flight attendant would take charge of me and I never had an unpleasant experience. I am used to travelling by air and only on one occasion have I ever felt frightened. After taking off, we were flying low over the city and slowly gaining height, when the plane suddenly turned round and flew back to the airport. While we were waiting to land, a flight attendant told us to keep calm and to get off the plane quietly as soon as it had touched down. Everybody on board was worried and we were curious to find out what had happened. Later we learnt that there was a very important person on board. The police had been told that a bomb had been planted on the plane. After we had landed, the plane was searched thoroughly. Fortunately, nothing was found and five hours later we were able to take off again.
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 3em;"></p>
+    </div>
+
+    <div style="width: 95%; display: flex; justify-content: space-around;">
+      <img src="img79/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img79/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img79/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img79/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      play
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 95%; display: flex; justify-content: space-around;text-align: center;">
+      <!-- 第一个音频文件的播放按钮 -->
+      <audio id="audio1" src="mp3/2_79.wav"></audio>
+      <button onclick="document.getElementById('audio1').play()">Enghlish_us</button>
+
+      <!-- 第二个音频文件的播放按钮 -->
+      <audio id="audio2" src="mp3/2_79_ii.wav"></audio>
+      <button onclick="document.getElementById('audio2').play()">Enghlish_in</button>
+
+      <!-- 第三个音频文件的播放按钮 -->
+      <audio id="audio3" src="mp3/2_79_cc.wav"></audio>
+      <button onclick="document.getElementById('audio3').play()">中文</button>
+    </div>
+    <div class="mydiv">
+      <a href="https://aj300542.github.io/"><button>about me</button></a>
+    </div>
+    <div class="nextButton">
+      <a href="80.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);">></span>
+        </button></a>
+    </div>
+    <div class="prevButton">
+      <a href="78.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);"><</span>
+        </button></a>
+    </div>
+  </body>
+
+
+</body>
+
+</html>
