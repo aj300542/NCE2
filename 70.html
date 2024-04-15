@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>翻页故事70</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      width: 25vw;
+      height: auto;
+      max-width: 100%;
+
+    }
+  </style>
+  <style>
+    #homeButton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .mydiv {
+
+      background-color: gray;
+      position: absolute;
+      top: 200px;
+      right: 10px;
+    }
+
+    .mydiv button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .nextButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      right: 10px;
+    }
+  </style>
+  <style>
+    .prevButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      left: 10px;
+    }
+  </style>
+
+  <script>
+    function toDou(n) {
+      if (n < 4) {
+        return '0' + n;
+      } else {
+        return '' + n;
+      }
+    }
+    // Initialize counter
+    var count = 0;
+
+    window.onload = function () {
+      var imgSet = document.getElementsByTagName('img');
+
+      function Ticker() {
+        // Get the current image to change
+        var img = imgSet[count % imgSet.length];
+
+        // Update the source of the current image
+        img.src = 'img70/' + count + '.jpg';
+
+        // Increment the counter
+        count++;
+
+        // Reset the counter if it reaches the total number of images
+        if (count >= imgSet.length) {
+          count = 0;
+        }
+      }
+
+      setInterval(Ticker, 4000);
+    };
+
+
+  </script>
+
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+  <a href="index.html">
+    <button id="homeButton"><span style="color:rgb(68, 44, 16)">home</span></button>
+  </a>
+
+  <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      Lesson 70 Red for danger
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div
+      style="width: 50%; text-align: left; font-size: 18px; font-family: sans-serif; color: rgb(0, 0, 0); line-height: 1.6;">
+      During a bullfight, a drunk suddenly wandered into the middle of the ring. The crowd began to shout, but the drunk was unaware of the danger. The bull was busy with the matador at the time, but it suddenly caught sight of the drunk who was shouting rude remarks and waving a red cap. Apparently sensitive to criticism, the bull forgot all about the matador and charged at the drunk. The crowd suddenly grew quiet. The drunk, however, seemed quite sure of himself. When the bull got close to him, he clumsily stepped aside to let it pass. The crowd broke into cheers and the drunk bowed. By this time, however, three men had come into the ring and they quickly dragged the drunk to safety. Even the bull seemed to feel sorry for him, for it looked on sympathetically until the drunk was out of the way before once more turning its attention to the matador.
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 3em;"></p>
+    </div>
+
+    <div style="width: 95%; display: flex; justify-content: space-around;">
+      <img src="img70/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img70/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img70/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img70/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      play
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 95%; display: flex; justify-content: space-around;text-align: center;">
+      <!-- 第一个音频文件的播放按钮 -->
+      <audio id="audio1" src="mp3/2_70.wav"></audio>
+      <button onclick="document.getElementById('audio1').play()">Enghlish_us</button>
+
+      <!-- 第二个音频文件的播放按钮 -->
+      <audio id="audio2" src="mp3/2_70_ii.wav"></audio>
+      <button onclick="document.getElementById('audio2').play()">Enghlish_in</button>
+
+      <!-- 第三个音频文件的播放按钮 -->
+      <audio id="audio3" src="mp3/2_70_cc.wav"></audio>
+      <button onclick="document.getElementById('audio3').play()">中文</button>
+    </div>
+    <div class="mydiv">
+      <a href="https://aj300542.github.io/"><button>about me</button></a>
+    </div>
+    <div class="nextButton">
+      <a href="71.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);">></span>
+        </button></a>
+    </div>
+    <div class="prevButton">
+      <a href="69.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);"><</span>
+        </button></a>
+    </div>
+  </body>
+
+
+</body>
+
+</html>
