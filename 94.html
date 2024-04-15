@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>翻页故事94</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      width: 25vw;
+      height: auto;
+      max-width: 100%;
+
+    }
+  </style>
+  <style>
+    #homeButton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .mydiv {
+
+      background-color: gray;
+      position: absolute;
+      top: 200px;
+      right: 10px;
+    }
+
+    .mydiv button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .nextButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      right: 10px;
+    }
+  </style>
+  <style>
+    .prevButton {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 400px;
+      left: 10px;
+    }
+  </style>
+
+  <script>
+    function toDou(n) {
+      if (n < 4) {
+        return '0' + n;
+      } else {
+        return '' + n;
+      }
+    }
+    // Initialize counter
+    var count = 0;
+
+    window.onload = function () {
+      var imgSet = document.getElementsByTagName('img');
+
+      function Ticker() {
+        // Get the current image to change
+        var img = imgSet[count % imgSet.length];
+
+        // Update the source of the current image
+        img.src = 'img94/' + count + '.jpg';
+
+        // Increment the counter
+        count++;
+
+        // Reset the counter if it reaches the total number of images
+        if (count >= imgSet.length) {
+          count = 0;
+        }
+      }
+
+      setInterval(Ticker, 4000);
+    };
+
+
+  </script>
+
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+  <a href="index.html">
+    <button id="homeButton"><span style="color:rgb(68, 44, 16)">home</span></button>
+  </a>
+
+  <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      Lesson 94  Future champions 
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div
+      style="width: 50%; text-align: left; font-size: 18px; font-family: sans-serif; color: rgb(0, 0, 0); line-height: 1.6;">
+      Experiments have proved that children can be instructed in swimming at a very early age. At a special swimming pool in Los Angeles, children become expert at holding their breath under water even before they can walk. Babies of two months old do not appear to be reluctant to enter the water. It is not long before they are so accustomed to swimming that they can pick up weights from the floor of the pool. A game that is very popular with these young swimmers is the underwater tricycle race. Tricycles are lined up on the floor of the pool seven feet under water. The children compete against each other to reach the other end of the pool. Many pedal their tricycles, but most of them prefer to push or drag them. Some children can cover the whole length of the pool without coming up for breath even once. Whether they will ever become future Olympic champions, only time will tell. Meanwhile, they should encourage those among us who cannot swim five yards before they are gasping for air.
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 3em;"></p>
+    </div>
+
+    <div style="width: 95%; display: flex; justify-content: space-around;">
+      <img src="img94/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img94/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img94/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+      <img src="img94/0.jpg" alt="0" style="width: 24%; margin: 0 0.5%;" />
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      play
+    </div>
+    <div style="width: 60%; text-align: center; font-size: 24px; font-family: Arial; color: rgb(0, 0, 0);">
+      <p style="margin-top: 1em;"></p>
+    </div>
+    <div style="width: 95%; display: flex; justify-content: space-around;text-align: center;">
+      <!-- 第一个音频文件的播放按钮 -->
+      <audio id="audio1" src="mp3/2_94.wav"></audio>
+      <button onclick="document.getElementById('audio1').play()">Enghlish_us</button>
+
+      <!-- 第二个音频文件的播放按钮 -->
+      <audio id="audio2" src="mp3/2_94_ii.wav"></audio>
+      <button onclick="document.getElementById('audio2').play()">Enghlish_in</button>
+
+      <!-- 第三个音频文件的播放按钮 -->
+      <audio id="audio3" src="mp3/2_94_cc.wav"></audio>
+      <button onclick="document.getElementById('audio3').play()">中文</button>
+    </div>
+    <div class="mydiv">
+      <a href="https://aj300542.github.io/"><button>about me</button></a>
+    </div>
+    <div class="nextButton">
+      <a href="95.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);">></span>
+        </button></a>
+    </div>
+    <div class="prevButton">
+      <a href="93.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);"><</span>
+        </button></a>
+    </div>
+  </body>
+
+
+</body>
+
+</html>

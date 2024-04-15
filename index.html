@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>翻页故事01</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+
+
+
+    <style>
+      body {
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        text-align: center;
+        /* Reduced font size */
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* Removed overflow hidden */
+        overflow: auto;
+      }
+  
+      img {
+        width: 7vw;
+        height: auto;
+        max-width: 100%;
+  
+      }
+    </style>
+  <style>
+    
+    #homeButton {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        cursor: pointer;
+    }
+  </style>
+  <style>
+    .mydiv {
+        
+        background-color: gray;
+        position: absolute;
+        top: 200px;
+        right: 10px;
+    }
+
+    .mydiv button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+  </style>
+  <style>
+    .nextButton {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 400px;
+        right: 10px;
+    }
+  </style>
+  <style>
+    .prevButton {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 400px;
+        left: 10px;
+    }
+  </style>
+
+
+
+
+</head>
+<body>
+  <div class="main">
+    <a href="index.html">
+      <button id="homeButton"><span style="color:rgb(68, 44, 16)">home</span></button>
+    </a>        
+   
+    
+      
+        <header class="text-center mb-2">
+          <h2 class="text-uppercase lined">新概念第二册</h2>
+        </header>
+        <div class="row">
+          <div class="row-lg-12 text-center">
+            <p>NCE 2</p>
+          </div>
+        </div>
+        <div class="row-lg-12 text-center">
+
+        <div style="width: 95%; display: flex; justify-content: space-around;max-width: 90%;">
+          <div class="col-lg-4 col-md-6 mb-4"><a href="01.html" class="d-block mb-1"><p>Lesson 1</p><img src="img01/0.jpg" alt="..." ></p>A private conversation
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="02.html" class="d-block mb-1"><p>Lesson 2</p><img src="img02/0.jpg" alt="..." ></p>Breakfast or lunch?</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="03.html" class="d-block mb-1"><p>Lesson 3</p><img src="img03/0.jpg" alt="..." ></p>Please send me a card</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="04.html" class="d-block mb-1"><p>Lesson 4</p><img src="img04/0.jpg" alt="..." ></p>An exciting trip
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="05.html" class="d-block mb-1"><p>Lesson 5</p><img src="img05/0.jpg" alt="..." ></p>No wrong numbers</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="06.html" class="d-block mb-1"><p>Lesson 6</p><img src="img06/0.jpg" alt="..." ></p>Percy Buttons
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="07.html" class="d-block mb-1"><p>Lesson 7</p><img src="img07/0.jpg" alt="..." ></p>Too late
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="08.html" class="d-block mb-1"><p>Lesson 8</p><img src="img08/0.jpg" alt="..." ></p> The best and the worst
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="09.html" class="d-block mb-1"><p>Lesson 9</p><img src="img09/0.jpg" alt="..." ></p>A cold welcome
+          </p></a></div>
+        </div>
+        <div style="width: 95%; display: flex; justify-content: space-around;">
+          <div class="col-lg-4 col-md-6 mb-4"><a href="10.html" class="d-block mb-1"><p>Lesson 10</p><img src="img10/0.jpg" alt="..." ></p>Not for jazz
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="11.html" class="d-block mb-1"><p>Lesson 11</p><img src="img11/0.jpg" alt="..." ></p>One good turn deserves another
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="12.html" class="d-block mb-1"><p>Lesson 12</p><img src="img12/0.jpg" alt="..." ></p>Goodbye and good luck
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="13.html" class="d-block mb-1"><p>Lesson 13</p><img src="img13/0.jpg" alt="..." ></p>The Greenwood Boys
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="14.html" class="d-block mb-1"><p>Lesson 14</p><img src="img14/0.jpg" alt="..." ></p> Do you speak English?
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="15.html" class="d-block mb-1"><p>Lesson 15</p><img src="img15/0.jpg" alt="..." ></p>Good news</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="16.html" class="d-block mb-1"><p>Lesson 16</p><img src="img16/0.jpg" alt="..." ></p>A polite request
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="17.html" class="d-block mb-1"><p>Lesson 17</p><img src="img17/0.jpg" alt="..." ></p>Always young
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="18.html" class="d-block mb-1"><p>Lesson 18</p><img src="img18/0.jpg" alt="..." ></p>He often does this!
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="19.html" class="d-block mb-1"><p>Lesson 19</p><img src="img19/0.jpg" alt="..." ></p>Sold out</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="20.html" class="d-block mb-1"><p>Lesson 20</p><img src="img20/0.jpg" alt="..." ></p>One man in a boat</p></a></div>
+        </div>
+        <div style="width: 95%; display: flex; justify-content: space-around;">
+          <div class="col-lg-4 col-md-6 mb-4"><a href="21.html" class="d-block mb-1"><p>Lesson 21</p><img src="img21/0.jpg" alt="..." ></p>Mad or not?</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="22.html" class="d-block mb-1"><p>Lesson 22</p><img src="img22/0.jpg" alt="..." ></p>A glass envelope
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="23.html" class="d-block mb-1"><p>Lesson 23</p><img src="img23/0.jpg" alt="..." ></p>A new house
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="24.html" class="d-block mb-1"><p>Lesson 24</p><img src="img24/0.jpg" alt="..." ></p>It could be worse
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="25.html" class="d-block mb-1"><p>Lesson 25</p><img src="img25/0.jpg" alt="..." ></p>Do the English speak English?</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="26.html" class="d-block mb-1"><p>Lesson 26</p><img src="img26/0.jpg" alt="..." ></p>The best art critics
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="27.html" class="d-block mb-1"><p>Lesson 27</p><img src="img27/0.jpg" alt="..." ></p>A wet night</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="28.html" class="d-block mb-1"><p>Lesson 28</p><img src="img28/0.jpg" alt="..." ></p>No parking
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="29.html" class="d-block mb-1"><p>Lesson 29</p><img src="img29/0.jpg" alt="..." ></p>Taxi!</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="30.html" class="d-block mb-1"><p>Lesson 30</p><img src="img30/0.jpg" alt="..." ></p>Football or polo?</p></a></div>
+        </div>
+        <div style="width: 95%; display: flex; justify-content: space-around;">
+          <div class="col-lg-4 col-md-6 mb-4"><a href="31.html" class="d-block mb-1"><p>Lesson 31</p><img src="img31/0.jpg" alt="..." ></p>Success story
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="32.html" class="d-block mb-1"><p>Lesson 32</p><img src="img32/0.jpg" alt="..." ></p>Shopping made easy</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="33.html" class="d-block mb-1"><p>Lesson 33</p><img src="img33/0.jpg" alt="..." ></p>Out of the darkness</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="34.html" class="d-block mb-1"><p>Lesson 34</p><img src="img34/0.jpg" alt="..." ></p>Quick work</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="35.html" class="d-block mb-1"><p>Lesson 35</p><img src="img35/0.jpg" alt="..." ></p>Stop thief!</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="36.html" class="d-block mb-1"><p>Lesson 36</p><img src="img36/0.jpg" alt="..." ></p>Across the Channel</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="37.html" class="d-block mb-1"><p>Lesson 37</p><img src="img37/0.jpg" alt="..." ></p>The Olympic Games
+          </p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="38.html" class="d-block mb-1"><p>Lesson 38</p><img src="img38/0.jpg" alt="..." ></p>Everything except the weather</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="39.html" class="d-block mb-1"><p>Lesson 39</p><img src="img39/0.jpg" alt="..." ></p>Am I all right?</p></a></div>
+          <div class="col-lg-4 col-md-6 mb-4"><a href="40.html" class="d-block mb-1"><p>Lesson 40</p><img src="img40/0.jpg" alt="..." ></p>Food and talk</p></a></div>   
+        </div>
+        <div style="width: 95%; display: flex; justify-content: space-around;">       
+          <div class="col-lg-4 col-md-6 mb-4"><a href="41.html" class="d-block mb-1"><p>Lesson 41</p><img src="img41/0.jpg" alt="..." ></p>Do you call that a hat?</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="42.html" class="d-block mb-1"><p>Lesson 42</p><img src="img42/0.jpg" alt="..." ></p>Not very musical</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="43.html" class="d-block mb-1"><p>Lesson 43</p><img src="img43/0.jpg" alt="..." ></p>Over the South Pole</p></a></div>                
+          <div class="col-lg-4 col-md-6 mb-4"><a href="44.html" class="d-block mb-1"><p>Lesson 44</p><img src="img44/0.jpg" alt="..." ></p> Through the forest</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="45.html" class="d-block mb-1"><p>Lesson 45</p><img src="img45/0.jpg" alt="..." ></p>Clear conscience</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="46.html" class="d-block mb-1"><p>Lesson 46</p><img src="img46/0.jpg" alt="..." ></p>Expensive and uncomfortable</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="47.html" class="d-block mb-1"><p>Lesson 47</p><img src="img47/0.jpg" alt="..." ></p>A thirsty ghost
+          </p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="48.html" class="d-block mb-1"><p>Lesson 48</p><img src="img48/0.jpg" alt="..." ></p>Did you want to tell me something?
+          </p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="49.html" class="d-block mb-1"><p>Lesson 49</p><img src="img49/0.jpg" alt="..." ></p>The end of a dream</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="50.html" class="d-block mb-1"><p>Lesson 50</p><img src="img50/0.jpg" alt="..." ></p>Taken for a ride
+          </p></a></div>  
+        </div> 
+        <div style="width: 95%; display: flex; justify-content: space-around;">       
+          <div class="col-lg-4 col-md-6 mb-4"><a href="51.html" class="d-block mb-1"><p>Lesson 51</p><img src="img51/0.jpg" alt="..." ></p>Reward for virtue</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="52.html" class="d-block mb-1"><p>Lesson 52</p><img src="img52/0.jpg" alt="..." ></p>A pretty carpet</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="53.html" class="d-block mb-1"><p>Lesson 53</p><img src="img53/0.jpg" alt="..." ></p> Hot snake</p></a></div>                
+          <div class="col-lg-4 col-md-6 mb-4"><a href="54.html" class="d-block mb-1"><p>Lesson 54</p><img src="img54/0.jpg" alt="..." ></p> Sticky fingers</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="55.html" class="d-block mb-1"><p>Lesson 55</p><img src="img55/0.jpg" alt="..." ></p>Not a gold mine</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="56.html" class="d-block mb-1"><p>Lesson 56</p><img src="img56/0.jpg" alt="..." ></p>Faster than sound!</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="57.html" class="d-block mb-1"><p>Lesson 57</p><img src="img57/0.jpg" alt="..." ></p>Can I help you, madam?
+          </p></a></div>     
+          <div class="col-lg-4 col-md-6 mb-4"><a href="58.html" class="d-block mb-1"><p>Lesson 58</p><img src="img58/0.jpg" alt="..." ></p>Blessing in disguise?
+          </p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="59.html" class="d-block mb-1"><p>Lesson 59</p><img src="img59/0.jpg" alt="..." ></p>In or out</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="60.html" class="d-block mb-1"><p>Lesson 60</p><img src="img60/0.jpg" alt="..." ></p>The future
+          </p></a></div>  
+        </div> 
+        <div style="width: 95%; display: flex; justify-content: space-around;">       
+          <div class="col-lg-4 col-md-6 mb-4"><a href="61.html" class="d-block mb-1"><p>Lesson 61</p><img src="img61/0.jpg" alt="..." ></p>Trouble with the Hubble</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="62.html" class="d-block mb-1"><p>Lesson 62</p><img src="img62/0.jpg" alt="..." ></p>After the fire</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="63.html" class="d-block mb-1"><p>Lesson 63</p><img src="img63/0.jpg" alt="..." ></p>She was not amused</p></a></div>                
+          <div class="col-lg-4 col-md-6 mb-4"><a href="64.html" class="d-block mb-1"><p>Lesson 64</p><img src="img64/0.jpg" alt="..." ></p>The Channel Tunnel</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="65.html" class="d-block mb-1"><p>Lesson 65</p><img src="img65/0.jpg" alt="..." ></p>Jumbo versus the police</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="66.html" class="d-block mb-1"><p>Lesson 66</p><img src="img66/0.jpg" alt="..." ></p>Sweet as honey!</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="67.html" class="d-block mb-1"><p>Lesson 67</p><img src="img67/0.jpg" alt="..." ></p>Volcanoes
+          </p></a></div>     
+          <div class="col-lg-4 col-md-6 mb-4"><a href="68.html" class="d-block mb-1"><p>Lesson 68</p><img src="img68/0.jpg" alt="..." ></p>Persistent
+          </p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="69.html" class="d-block mb-1"><p>Lesson 69</p><img src="img69/0.jpg" alt="..." ></p>But not murder!</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="70.html" class="d-block mb-1"><p>Lesson 70</p><img src="img70/0.jpg" alt="..." ></p>Red for danger
+          </p></a></div>  
+        </div> 
+        <div style="width: 95%; display: flex; justify-content: space-around;">       
+          <div class="col-lg-4 col-md-6 mb-4"><a href="71.html" class="d-block mb-1"><p>Lesson 71</p><img src="img71/0.jpg" alt="..." ></p>Red for danger</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="72.html" class="d-block mb-1"><p>Lesson 72</p><img src="img72/0.jpg" alt="..." ></p>A car called bluebird</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="73.html" class="d-block mb-1"><p>Lesson 73</p><img src="img73/0.jpg" alt="..." ></p>The record-holder</p></a></div>                
+          <div class="col-lg-4 col-md-6 mb-4"><a href="74.html" class="d-block mb-1"><p>Lesson 74</p><img src="img74/0.jpg" alt="..." ></p>Out of the limelight</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="75.html" class="d-block mb-1"><p>Lesson 75</p><img src="img75/0.jpg" alt="..." ></p>SOS</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="76.html" class="d-block mb-1"><p>Lesson 76</p><img src="img76/0.jpg" alt="..." ></p>April Fools' Day</p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="77.html" class="d-block mb-1"><p>Lesson 77</p><img src="img77/0.jpg" alt="..." ></p>A successful operation
+          </p></a></div>   
+          <div class="col-lg-4 col-md-6 mb-4"><a href="78.html" class="d-block mb-1"><p>Lesson 78</p><img src="img78/0.jpg" alt="..." ></p>The last one?
+          </p></a></div>      
+          <div class="col-lg-4 col-md-6 mb-4"><a href="79.html" class="d-block mb-1"><p>Lesson 79</p><img src="img79/0.jpg" alt="..." ></p>By air</p></a></div>             
+          <div class="col-lg-4 col-md-6 mb-4"><a href="80.html" class="d-block mb-1"><p>Lesson 80</p><img src="img80/0.jpg" alt="..." ></p>The Crystal Palace
+          </p></a></div>  
+        </div> 
+      </div>      
+  </div>
+  <div class="mydiv">
+    <a href="https://aj300542.github.io/"><button>about me</button></a>
+  </div>
+  <div class="nextButton">
+    <a href="01.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);">></span>
+      </button></a>
+  </div>
+  <div class="prevButton">
+    <a href="index.html"><button><span style="font-size:24px; color:rgb(98, 0, 255);"><</span>
+      </button></a>
+  </div>
+<!-- JavaScript files-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
+<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<script src="js/front.js"></script>
+</body>   
+    
+</body>
+
+  
+</html>
